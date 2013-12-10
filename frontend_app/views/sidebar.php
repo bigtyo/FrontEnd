@@ -147,11 +147,12 @@
 							<h2>Properti Terbaru</h2>
 							<div class="content">
 								
-								<?php for($i=0; $i<5; $i++) { ?>
+								<?php if(isset($recents)){
+                                                                    foreach ($recents as $obj) { ?>
 								<div class="property clearfix">
 									<div class="image">
-										<a href="property-detail.html">
-											<img width="570" height="425" src="<?php echo base_url()?>template/assets/img/property-tmp-small.png"
+										<a href="<?php echo base_url()."property/".url_title(strtolower($obj->JUDUL))."-".$obj->LISTINGID ?>">
+											<img width="570" height="425" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $obj->LISTINGID; ?>"
 											class="thumbnail-image " alt="17"/>
 										</a>
 									</div>
@@ -159,17 +160,17 @@
 
 									<div class="wrapper">
 										<div class="title">
-											<h3><a href="property-detail.html">
-													677 Cottage Terrace
+											<h3><a href="<?php echo base_url()."property/".url_title(strtolower($obj->JUDUL))."-".$obj->LISTINGID ?>">
+													<?php echo $obj->ALAMAT_SINGKAT; ?>
 												</a></h3>
 										</div>
 										<!-- /.title -->
 
-										<div class="location">Spring Valley</div>
+										<div class="location"><?php echo $obj->lokasi; ?></div>
 										<!-- /.location -->
 
 										<div class="price">
-											59,600 �
+											<?php echo get_rupiah($obj->HARGA); ?>
 										</div>
 										<!-- /.price -->
 									</div>
@@ -180,25 +181,26 @@
 								<div class="property-info clearfix">
 									<div class="area">
 										<i class="icon icon-normal-cursor-scale-up"></i>
-										650m<sup>2</sup>
+										<?php echo $obj->LUAS_BANGUNAN; ?>m<sup>2</sup>
 									</div>
 									<!-- /.area -->
 
 									<div class="bedrooms">
 										<i class="icon icon-normal-bed"></i>
-										1
+										<?php echo $obj->KAMAR_TIDUR; ?>
 									</div>
 									<!-- /.bedrooms -->
 
 									<div class="bathrooms">
 										<i class="icon icon-normal-shower"></i>
-										1
+										<?php echo $obj->KAMAR_MANDI; ?>
 									</div>
 									<!-- /.bathrooms -->
 								</div>
 								<!-- /.info -->
 
-								<?php } ?>
+								<?php }
+                                                                } ?>
 							</div>
 							<!-- /.content -->
 

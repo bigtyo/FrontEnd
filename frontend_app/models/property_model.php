@@ -65,6 +65,22 @@ class Property_model extends CI_Model{
                         join user u on u.marketingid = m.marketingid".$_where.$_limit;
             return $this->db->query($_query)->result();
         }
+        
+        public function getNewListing($offset = 3,$begin = 0)
+        {
+            $this->db->from('view_listing');
+            $this->db->limit($offset,$begin);
+            $this->db->order_by("waktuupdate", "desc"); 
+            $query = $this->db->get();
+            return $query->result();
+            
+            //$this->db->where($where);
+            //$this->db->from('view_listing');
+//            $data['count'] = count($data['listing']);
+//            $data['begin'] = $begin;
+//            $data['offset'] = $offset;
+//            return $data;
+        }
 	
 }
 ?>

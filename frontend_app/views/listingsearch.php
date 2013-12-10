@@ -9,7 +9,7 @@
                             <div class="span3">
                                     <div class="image">
                                             <div class="content">
-                                                    <a href="property-detail.html">
+                                                    <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>">
                                                     <img width="570" height="425"
                                                     src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>"
                                                     class="thumbnail-image" alt="15">

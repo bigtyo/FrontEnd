@@ -14,6 +14,7 @@
 			$data["model"] = $this->property_model;
                         $data['marketings'] = $this->property_model->getMarketingByListingid(0);
                         $data['hotpicks'] = $this->property_model->getHotPick(3);
+                        $data['recents'] = $this->property_model->getNewListing();
 			$this->load->view('homepage', $data);
 		}
 
@@ -87,7 +88,10 @@
                         $data['scripts'] = array(
                             "listing"
                         );
-                        
+                        $data['recents'] = $this->property_model->getNewListing();
+                        //echo json_encode($data);
+                        $data['marketings'] = $this->property_model->getMarketingByListingid();
+                        $data['hotpicks'] = $this->property_model->getHotPick(3);
                         
 			$this->load->view('listing',$data);
 
@@ -97,6 +101,7 @@
 			$data["property"] = $this->property_model->get_property_detail($LISTINGID);
                         $data['marketings'] = $this->property_model->getMarketingByListingid($LISTINGID);
                         $data['hotpicks'] = $this->property_model->getHotPick(3);
+                        $data['recents'] = $this->property_model->getNewListing();
 			$this->load->view('property_detail', $data);
 		}
 
