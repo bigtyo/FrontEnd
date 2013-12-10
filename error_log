@@ -1,0 +1,54 @@
+[06-Dec-2013 17:22:19 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 25
+[06-Dec-2013 17:22:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 25
+[07-Dec-2013 07:47:29 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 11:43:54 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 11:51:56 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 11:58:39 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 12:04:38 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 12:16:38 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 12:16:42 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 12:19:29 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 12:19:31 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[07-Dec-2013 18:37:09 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[08-Dec-2013 14:48:00 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[08-Dec-2013 19:23:28 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[09-Dec-2013 05:32:23 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[09-Dec-2013 10:39:52 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[09-Dec-2013 10:47:53 Asia/Jakarta] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/rsadmin/public_html/index.php:3) in /home/rsadmin/public_html/index.php on line 49
+[09-Dec-2013 14:14:49 Asia/Jakarta] PHP Fatal error:  Call to a member function get_homepage_listing() on a non-object in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1039
+[09-Dec-2013 14:28:56 Asia/Jakarta] PHP Fatal error:  Call to undefined function arrray() in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1038
+[09-Dec-2013 14:29:23 Asia/Jakarta] PHP Fatal error:  Call to undefined function arrray() in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1038
+[09-Dec-2013 14:29:51 Asia/Jakarta] PHP Fatal error:  Call to undefined function arrray() in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1038
+[09-Dec-2013 14:29:54 Asia/Jakarta] PHP Fatal error:  Call to undefined function arrray() in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1038
+[09-Dec-2013 14:47:13 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '<', expecting ')' in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 1069
+[09-Dec-2013 16:19:06 Asia/Jakarta] PHP Fatal error:  Call to undefined method Super_model::get_property_detail() in /home/rsadmin/public_html/frontend_app/controllers/main.php on line 24
+[09-Dec-2013 16:19:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected T_RETURN in /home/rsadmin/public_html/frontend_app/models/super_model.php on line 14
+[09-Dec-2013 16:19:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected T_RETURN in /home/rsadmin/public_html/frontend_app/models/super_model.php on line 14
+[09-Dec-2013 16:44:19 Asia/Jakarta] PHP Fatal error:  Call to undefined function get_rupiah() in /home/rsadmin/public_html/frontend_app/views/single.php on line 114
+[09-Dec-2013 17:19:27 Asia/Jakarta] PHP Fatal error:  Class 'Property_model' not found in /home/rsadmin/public_html/frontend_system/core/Loader.php on line 303
+[09-Dec-2013 17:19:31 Asia/Jakarta] PHP Fatal error:  Class 'Property_model' not found in /home/rsadmin/public_html/frontend_system/core/Loader.php on line 303
+[09-Dec-2013 18:37:30 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:37:34 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:37:35 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:37:56 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:40:07 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:41:19 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:41:46 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:41:50 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:42:04 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:43:08 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:43:35 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:44:04 Asia/Jakarta] PHP Fatal error:  Call to a member function get_all_city() on a non-object in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 76
+[09-Dec-2013 18:49:33 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Propertylib::get_all_state() in /home/rsadmin/public_html/frontend_app/libraries/Propertylib.php on line 15
+[09-Dec-2013 18:49:36 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Propertylib::get_all_state() in /home/rsadmin/public_html/frontend_app/libraries/Propertylib.php on line 15
+[09-Dec-2013 18:50:29 Asia/Jakarta] PHP Fatal error:  Cannot redeclare Propertylib::get_all_tipe_property() in /home/rsadmin/public_html/frontend_app/libraries/Propertylib.php on line 25
+[09-Dec-2013 18:50:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 90
+[09-Dec-2013 18:51:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 90
+[09-Dec-2013 18:54:41 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '}' in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 145
+[09-Dec-2013 19:20:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected T_AS, expecting ';' in /home/rsadmin/public_html/frontend_app/views/sidebar.php on line 221
+[09-Dec-2013 19:21:11 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::orderBy() in /home/rsadmin/public_html/frontend_app/libraries/Propertylib.php on line 32
+[09-Dec-2013 19:21:28 Asia/Jakarta] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::orderby() in /home/rsadmin/public_html/frontend_app/libraries/Propertylib.php on line 32
+[09-Dec-2013 20:03:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ')' in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 968
+[09-Dec-2013 20:03:30 Asia/Jakarta] PHP Fatal error:  Call to a member function get_recent_event() on a non-object in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 968
+[09-Dec-2013 20:03:37 Asia/Jakarta] PHP Fatal error:  Call to a member function get_recent_event() on a non-object in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 968
+[09-Dec-2013 20:04:35 Asia/Jakarta] PHP Fatal error:  Call to a member function get_recent_event() on a non-object in /home/rsadmin/public_html/frontend_app/views/homepage.php on line 968
