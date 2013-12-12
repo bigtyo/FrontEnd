@@ -118,8 +118,9 @@
                                                                                                                                     <h2><a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>"><?php echo $property->JUDUL ?></a></h2>
                                                                                                                             </div>
                                                                                                                             <!-- /.title -->
+																															<br />
                                                                                                                             <div class="price">
-                                                                                                                                    <?php echo get_rupiah($property->HARGA) ?>
+                                                                                                                                  <?php echo get_rupiah($property->HARGA) ?>
                                                                                                                             </div>
                                                                                                                             <!-- /.price -->
                                                                                                                     </div>

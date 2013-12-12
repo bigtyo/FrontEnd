@@ -46,63 +46,49 @@
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-    <title>Contact Us</title>
+    <title>About Us - RumahSuper.com</title>
 </head>
 
 <body class="home page page-template">
     <?php include("top.php") ?>
-
 <div id="content" class="clearfix">
 
-     <div class="container" style="margin-top:30px;">
+    <div class="container" style="margin-top:30px;">
 		<ul class="breadcrumb">
 			<li><a href="<?php echo base_url()?>">Home</a> <span class="divider">/</span></li>
-		  	<li class="active">Hubungi Kami</li>
+		  	<li class="active">About</li>
 		</ul>
         <div class="row">
 
             <div id="main" class="span9">
                 <article class="clearfix page type-page">
                     <div class="entry-content">
-                        <h2 class="sent-title">Send us a message</h2>
-						<p>For further information about our services, please contact our customer support through this following form.</p>
+						<img class="pull-left img-polaroid" style="margin-right:20px;margin-bottom: 10px" src="<?php base_url()?>template/assets/img/RayWhiteBuilding.jpg" alt=""></img>
+						<h3>Tentang Raywhite</h3>
+						<p>
+							Ray White Real Estate yang berasal dari Australia hadir di Indonesia sejak tahun 1997 yakni ditandai dengan 6 kantor pertama yang berada di Jakarta dan berkembang pesat dalam kurun waktu yang singkat dengan 85 kantor yang tersebar di seluruh wilayah Indonesia. Sekarang ini Ray White Indonesia merupakan jaringan Real Estate di luar Australia dan Selandia Baru dengan menunjukkan prestasi yang sangat gemilang dalam memasarkan property melalui lelang maupun exclusive.
+						</p>
+						<p>
+							Ray White Indonesia. telah menjadi Market Leader sejak tahun 2000 dan mempunyai komitment untuk selalu memberikan dukungan terbaik terhadap kantor-kantornya termasuk Ray White Diponegoro. Ray White Diponegoro berlokasi di pusat kota Jl. Diponegoro 196E Surabaya terletak dipertigaan Jl. Diponegoro dan Jl.Kartini, dengan letaknya yang sangat strategis di Surabaya Pusat dengan areal Commercial dan Residential yang prestisius Ray White Diponegoro sangat memungkinkan dijadikan sarana promosi bagi proyek /property yang akan dipasarkan.
+						</p>
+						<p>
+							Dengan komitmen, dedikasi dan pengalaman, Ray White Diponegoro, Surabaya membentuk menjadi satu team yang khusus bekerjasama dengan developer - developer untuk memasarkan propertynya.
+						</p>
 						
-						<script>
-						$(function(){
-							$('.contact-form').submit(function(){
-								$('input').val('');
-								$('textarea').val('');
-								$('.sent-title').text('Thank You, Your message is sent !');
-								return false;
-							});
-						})
-						</script>
-								
-                        <div class="contact-form">
-                            <form action="" method="post" class="contact-form">
-								
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="span4"><label>Your name</label><span class="your-name"><input type="text" name="your-name" value="" size="40"></span>
-                                        </div>
-                                        <div class="span4"><label>E-mail</label><span class="your-email"><input type="email" name="your-email" value="" size="40"></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="controls">
-                                    <label>Message</label><span class="your-message"><textarea name="your-message" cols="40" rows="10" class="span7"></textarea></span>
-                                </div>
-
-                                <div class="controls">
-                                    <button id="contact-submit" type="submit" class="btn btn-primary input-medium">
-                                        Send
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-
-
+						<h3>Visi & Misi</h3>
+						<h1>Visi Ray White</h1>
+						<p>Merevolusi pemasaran property di Indonesia, khususnya Surabaya dan Jawa Timur dan menjadi salah satu perusahaan broker property yang terbesar dan terbaik di Surabaya dan sekitarnya. .</p>						
+						<p>Ray White mempunyai misi menjadi perusahaan yang selalu :</p>
+						<p>
+							1. Memberikan servis jual, beli, sewa dan lelang serta mengutamakan profesionalisme, pelayanan berkualitas dan fleksibilitas dalam memenuhi kebutuhan klien.
+							<br />
+							2. Menyediakan lingkungan kerja yang kondusif bagi Marketing Executive dan Staff office.
+							<br />
+							3. Pengembangan kemampuan Marketing Executive dan Staff office yang terus menerus dan berkesinambungan, sehingga menjadikan mereka profesional di bidangnya masing - masing.
+							<br />
+							4. Membentuk wirausahawan - wirausahawan muda yang mandiri dan handal.	
+						</p>
+												
                     </div>
                     <!-- .entry-content -->
                 </article>

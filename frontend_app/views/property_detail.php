@@ -45,7 +45,7 @@
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-		<title>Properta | Real Estate Template</title>
+		<title><?php echo $property->JUDUL ?> hanya di RumahSuper.com</title>
 	</head>
 
 	<body class="home page page-template">
@@ -73,14 +73,14 @@
 							<div class="row">
 								<div class="span6 gallery">
 									<div class="preview">
-										<img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
+										<img class="img-polaroid" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
 									</div>
 
 									<div class="content">
 										<ul>
 											<li class="active">
 												<div class="thumb">
-													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=2" alt=""></a>
+													<a href="#"><img  src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=2" alt=""></a>
 												</div>
 											</li>
 											<li>
@@ -103,7 +103,6 @@
 													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=6" alt=""></a>
 												</div>
 											</li>
-
 										</ul>
 									</div>
 									<!-- /.content -->

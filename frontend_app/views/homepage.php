@@ -47,8 +47,9 @@
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/chosen/chosen.jquery.min.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
-
-		<title>RumahSuper.com</title>
+		
+		
+		<title>RumahSuper.com | Top Property Listing in Indonesia</title>
 	</head>
 
 	<body class="home page page-template">
@@ -97,7 +98,7 @@
                      data-x="10"
                      data-y="528" data-speed="300"
                      data-start="1100"
-                     data-easing="easeInOutQuad">SEO on-page optimized
+                     data-easing="easeInOutQuad">Lebih banyak pilihanya
 							</div>
 
 						</li>
@@ -273,9 +274,9 @@
 											<!-- /.property -->
 
 											<div class="property-info clearfix">
-												<div class="area"><i class="icon icon-normal-cursor-scale-up"></i><?php echo $property->LUAS_BANGUNAN; ?>m<sup>2</sup></div>
-												<div class="bedrooms"><i class="icon icon-normal-bed"></i><?php echo $property->KAMAR_TIDUR; ?></div>
-												<div class="bathrooms"><i class="icon icon-normal-shower"></i><?php echo $property->KAMAR_MANDI; ?></div>
+												<div class="area"><i class="icon-home icon-custom"></i><?php echo $property->LUAS_BANGUNAN; ?>m<sup>2</sup></div>
+												<div class="bedrooms"><i class="icon-random icon-custom"></i><?php echo $property->KAMAR_TIDUR; ?></div>
+												<div class="bathrooms"><i class="icon-calendar icon "></i><?php echo $property->KAMAR_MANDI; ?></div>
 												<!-- /.bathrooms -->
 											</div>
 											<!-- /.property-info -->

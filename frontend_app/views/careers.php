@@ -46,64 +46,54 @@
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-    <title>Contact Us</title>
+    <title>Careers</title>
 </head>
 
 <body class="home page page-template">
     <?php include("top.php") ?>
-
 <div id="content" class="clearfix">
 
-     <div class="container" style="margin-top:30px;">
+    <div class="container" style="margin-top:30px;">
 		<ul class="breadcrumb">
 			<li><a href="<?php echo base_url()?>">Home</a> <span class="divider">/</span></li>
-		  	<li class="active">Hubungi Kami</li>
+		  	<li class="active">Careers</li>
 		</ul>
         <div class="row">
 
             <div id="main" class="span9">
                 <article class="clearfix page type-page">
                     <div class="entry-content">
-                        <h2 class="sent-title">Send us a message</h2>
-						<p>For further information about our services, please contact our customer support through this following form.</p>
+						<h3>Join with one of the leader of International Property Group</h3>
+						<img class="pull-left img-polaroid" style="margin-right:20px" src="<?php base_url()?>template/assets/img/careers.png" alt=""></img>
+						<p>Ray White Group International, The Largest Property Group in Australasia & a long established Australian Group, over 100 years of Experience, over 850 offices thought out Australia, New Zealand, Indonesia, Shanghai & Papua New Guinea & Employing more than 5000 staff.</p>
+						<p>Ray White Indonesia The Leading property Agent in Indonesia, with more than 100 Offices thought out 21 Cities in Indonesia and 17 provinces, with it is mission to become the most dominant Agent in every marketplace & has 11 years of Success in Indonesian Property Market are looking for young, energetic, and well motivated people for the following position Marketing Executives.</p>
+						<p>
+							Interested in a real estate career? We have opportunities for you seeking to expand your skills and professionalism to join our group. We are looking for people that have the same culture of excellence and ambitions to become the leaders in their field.
+						</p>						
 						
-						<script>
-						$(function(){
-							$('.contact-form').submit(function(){
-								$('input').val('');
-								$('textarea').val('');
-								$('.sent-title').text('Thank You, Your message is sent !');
-								return false;
-							});
-						})
-						</script>
-								
-                        <div class="contact-form">
-                            <form action="" method="post" class="contact-form">
-								
-                                <div class="controls">
-                                    <div class="row">
-                                        <div class="span4"><label>Your name</label><span class="your-name"><input type="text" name="your-name" value="" size="40"></span>
-                                        </div>
-                                        <div class="span4"><label>E-mail</label><span class="your-email"><input type="email" name="your-email" value="" size="40"></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="controls">
-                                    <label>Message</label><span class="your-message"><textarea name="your-message" cols="40" rows="10" class="span7"></textarea></span>
-                                </div>
-
-                                <div class="controls">
-                                    <button id="contact-submit" type="submit" class="btn btn-primary input-medium">
-                                        Send
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-
-
-                    </div>
+						<h3>Testimonial</h3>
+						
+						<p>
+							<strong>Robby Novanlius Sutrisno</strong> <br />
+							Kadang keberanian berada ditempat yang tak terduga, beranilah untuk mencari untuk mengantisipasi perubahan yang akan terjadi.
+						</p>
+						
+						<p>
+							<strong>Mac</strong> <br />
+							Jangan kecewa apabila hasil yang diperoleh tidak seperti yang diharapkan, Percaya bahwa semuanya adalah kesuksesan, bukan kegagalan.
+						</p>
+						
+						<p>
+							<strong>Chris</strong> <br />
+							Hanya orang yang berani gagal total akan meraih keberhasilan total. Kerja keras tentunya salah satu faktor untuk memperoleh kesuksesan kemudian didukung juga oleh ketekunan.
+						</p>
+						
+						<p>
+							<strong>Riani</strong> <br />
+							Andai kita berani mencoba, dan lebih tekun dan ulet, maka pasti kegagalan tak pernah ada. Seberapa besar rejeki yang kita inginkan itu sama dengan seberapa besar kita berani mengambil risiko.
+						</p>
+						
+					</div>
                     <!-- .entry-content -->
                 </article>
                 <!-- /#post -->
