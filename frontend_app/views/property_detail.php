@@ -71,41 +71,12 @@
 						<div class="property-detail">
 
 							<div class="row">
-								<div class="span6 gallery">
+								<div class="span6 gallery" id="images_place">
 									<div class="preview">
 										<img class="img-polaroid" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
 									</div>
 
-									<div class="content">
-										<ul>
-											<li class="active">
-												<div class="thumb">
-													<a href="#"><img  src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=2" alt=""></a>
-												</div>
-											</li>
-											<li>
-												<div class="thumb">
-													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=3" alt=""></a>
-												</div>
-											</li>
-											<li>
-												<div class="thumb">
-													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=4" alt=""></a>
-												</div>
-											</li>
-											<li>
-												<div class="thumb">
-													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=5" alt=""></a>
-												</div>
-											</li>
-											<li>
-												<div class="thumb">
-													<a href="#"><img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=6" alt=""></a>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<!-- /.content -->
+									
 								</div>
 
 								<div class="overview">
@@ -282,5 +253,11 @@
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/js/jquery.bxslider.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/js/properta.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/js/jquery.bxslider.min.js'></script>
+                <script type='text/javascript'>
+                    $.get('<?php echo NODE_URL; ?>imageslistingdetail',{listingid : <?php echo $property->LISTINGID; ?>},function(res){
+                       $("#images_place").html(res); 
+                    });
+                    
+                </script>
 	</body>
 </html>
