@@ -62,37 +62,7 @@
 														});
 												});
 										</script>
-										<div class="properties-rows">
-											<div class="filter-wrapper">
-												<div class="filter pull-right">
-													<form action="javascript:void(0)" method="get" class="form-sort form-horizontal pull-right">
-														<div class="pager pull-right" >
-															<ul class="pager">
-																<li><a href="#" onclick="prev();" ><i class="icon icon-normal-left-arrow-small"></i></a></li>
-																<li><a href="#" onclick="next();"><i class="icon icon-normal-right-arrow-small"></i></a></li>
-															</ul>
-															</div><!-- /.pager -->
-															<div class="control-group pull-right">
-																<div class="controls">
-																	<select name="filter_sort_by" id="inputSortBy">
-																		<option value="price" >Price</option>
-																		<option value="published" >Published</option>
-																	</select>
-																</div>
-															</div>
-															<div class="control-group pull-right">
-																<div class="controls">
-																	<select id="inputOrder" name="filter_order" class="chosen">
-																		<option value="DESC" >Descending</option>
-																		<option value="ASC" >Ascending</option>
-																	</select>
-																	</div><!-- /.controls -->
-																	</div><!-- /.control-group -->
-																</form>
-																<!-- /.filter -->
-															</div>
-											</div>
-						      <!-- /.properties-rows --></div>
+										
                                                                             <div class="properties-rows" id="listings">
                                                                                 <input type="hidden" id="count" value="<?php echo $count; ?>"
                                                                                     <div class="row">
@@ -104,7 +74,7 @@
                                                                                                                             <div class="content">
                                                                                                                                     <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>">
                                                                                                                                     <img width="570" height="425"
-                                                                                                                                    src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>"
+                                                                                                                                    src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>"
                                                                                                                                     class="thumbnail-image" alt="15">
                                                                                                                                     </a>
                                                                                                                             </div>

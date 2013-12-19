@@ -45,7 +45,7 @@
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-		<title><?php echo $property->JUDUL ?> hanya di RumahSuper.com</title>
+		<title>Properta | Real Estate Template</title>
 	</head>
 
 	<body class="home page page-template">
@@ -73,7 +73,7 @@
 							<div class="row">
 								<div class="span6 gallery" id="images_place">
 									<div class="preview">
-										<img class="img-polaroid" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
+										<img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
 									</div>
 
 									

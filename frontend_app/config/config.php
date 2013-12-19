@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://rumahsuper.com';
+if($_SERVER['SERVER_NAME']=="localhost"){
+	$config['base_url']	= 'http://localhost:85/Frontend2/';
+}else{
+	$config['base_url']	= 'http://103.247.8.90/';
+}
 
 /*
 |--------------------------------------------------------------------------

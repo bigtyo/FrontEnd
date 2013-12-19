@@ -65,17 +65,72 @@
 					<!-- /#sidebar -->
 
 					<div id="main" class="span9 single-property">
-						<h1 class="page-header fl"><?php echo $property->JUDUL ?></h1>
+						<h1 class="page-header fl"><?php echo $event->judul ?></h1>
+                                                <div class="span12 gallery">
+                                                    <div class="preview">
+                                                            <img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=1" alt="">
+                                                    </div>
+
+                                                    <div class="content">
+                                                            <ul>
+                                                                    <li class="active">
+                                                                            <div class="thumb">
+                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=2" alt=""></a>
+                                                                            </div>
+                                                                    </li>
+                                                                    <li>
+                                                                            <div class="thumb">
+                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=3" alt=""></a>
+                                                                            </div>
+                                                                    </li>
+                                                                    <li>
+                                                                            <div class="thumb">
+                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=4" alt=""></a>
+                                                                            </div>
+                                                                    </li>
+                                                                    <li>
+                                                                            <div class="thumb">
+                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=5" alt=""></a>
+                                                                            </div>
+                                                                    </li>
+                                                                    <li>
+                                                                            <div class="thumb">
+                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=6" alt=""></a>
+                                                                            </div>
+                                                                    </li>
+
+                                                            </ul>
+                                                    </div>
+                                                    <!-- /.content -->
+                                                </div>
 						<div class="property-detail">
-							<p>Quisque non dictum eros. Praesent porta vehicula arcu eu ornare. Donec id egestas arcu. Suspendisse auctor
-								condimentum ligula ultricies cursus. Vestibulum vel orci vel lacus rhoncus sagittis sed vitae mi. Pellentesque
-								molestie elit bibendum tincidunt semper. Aliquam ac volutpat risus. In felis felis, posuere commodo aliquet eget,
-								sagittis sed turpis. Phasellus commodo turpis non nunc egestas, et egestas felis pretium. Pellentesque dignissim
-								libero vitae tincidunt semper. Nam id ante nisi. Nam sollicitudin, dolor non suscipit feugiat, nibh lacus commodo
-								metus, nec tempus dui velit sagittis velit. Pellentesque elementum risus rhoncus justo porta, at varius odio
-								consequat. Duis non augue adipiscing, posuere quam non, tempus urna.
-							</p>
+                                                    <p><?php echo $event->description; ?></p>
+                                                    <div class="row">
+								<div class="span6">
+									<div class="row">
+										<div class="span6">
+											<h2>Informasi Umum</h2>
+											<div class="row">
+												<ul class="span6">
+													
+													<li class="checked">Tempat : <?php echo $event->Tempat ?></li>
+													<li class="checked">Tanggal : <?php echo $event->tanggal ?></li>
+													
+													<!--<li class="plain">Sertifikat : <?php echo $event->SERTIFIKAT ?></li>-->
+												</ul>
+											</div>
+											<!-- /.row -->
+										</div>
+										<!-- /.span12 -->
+									</div>
+									<!-- /.row -->
+								</div>
+
+								
+
+							</div>
 						</div>
+                                                
 					</div>
 				</div>
 			</div>

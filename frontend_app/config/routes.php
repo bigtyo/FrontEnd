@@ -41,12 +41,6 @@
 $route['default_controller'] = "main/index";
 $route['404_override'] = '';
 
-
-// Open Public Pages
-$route['contact'] = "page/contact";
-$route['about'] = "page/about";
-$route['careers'] = "page/careers";
-
 $route['listing'] = "main/listing";
 $route['listingsearch'] = "main/listingsearch";
 $route['property/(:any)-(:num)'] = "main/single/$2";

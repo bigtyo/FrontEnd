@@ -31,7 +31,6 @@
     <link rel='stylesheet' id='revolution-settings' href='<?php echo base_url()?>template/assets/libraries/rs-plugin/css/settings.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='bootstrap-css' href='<?php echo base_url()?>template/assets/libraries/bootstrap/css/bootstrap.min.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='bootstrap-responsive-css' href='<?php echo base_url()?>template/assets/libraries/bootstrap/css/bootstrap-responsive.min.css' type='text/css' media='all'/>
-	<link rel='stylesheet' id='bootstrap-responsive-css' href='<?php echo base_url()?>template/css/style.css' type='text/css' media='all'/>
 
     <link rel='stylesheet' id='pictopro-normal-css' href='<?php echo base_url()?>template/assets/icons/pictopro-normal/style.css' type='text/css' media='all'/>
     <link rel='stylesheet' id='justvector-web-font-css' href='<?php echo base_url()?>template/assets/icons/justvector-web-font/stylesheet.css' type='text/css' media='all'/>
@@ -46,41 +45,46 @@
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
     <script type='text/javascript' src='assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-    <title>Contact Us</title>
+    <title>Properta | Real Estate Template</title>
 </head>
 
 <body class="home page page-template">
     <?php include("top.php") ?>
+</div>
 
 <div id="content" class="clearfix">
 
-     <div class="container" style="margin-top:30px;">
-		<ul class="breadcrumb">
-			<li><a href="<?php echo base_url()?>">Home</a> <span class="divider">/</span></li>
-		  	<li class="active">Hubungi Kami</li>
-		</ul>
+    <div class="container">
         <div class="row">
 
             <div id="main" class="span9">
                 <article class="clearfix page type-page">
+                    <header class="entry-header">
+
+                        <h1 class="page-header entry-title">
+                            Contact
+                        </h1>
+
+
+                    </header>
+                    <!-- .entry-header -->
+
                     <div class="entry-content">
-                        <h2 class="sent-title">Send us a message</h2>
-						<p>For further information about our services, please contact our customer support through this following form.</p>
-						
-						<script>
-						$(function(){
-							$('.contact-form').submit(function(){
-								$('input').val('');
-								$('textarea').val('');
-								$('.sent-title').text('Thank You, Your message is sent !');
-								return false;
-							});
-						})
-						</script>
-								
+                        <p>Donec congue egestas nisi id varius. Curabitur ullamcorper consectetur risus, eget dapibus
+                            lacus. Maecenas sit amet dui dictum, tincidunt ante vel, semper purus. In hac habitasse
+                            platea dictumst. Vivamus hendrerit sem a rutrum ornare. Donec vehicula auctor eros. Etiam et
+                            enim tellus.</p>
+
+                        <p>
+                            <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0"
+                                    marginwidth="0"
+                                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Washington+D.C.+white+house&amp;aq=t&amp;sll=37.0625,-95.677068&amp;sspn=60.376022,92.460937&amp;ie=UTF8&amp;hq=Washington+D.C.+white+house&amp;t=m&amp;ll=38.896984,-77.036518&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+                        </p>
+                        <h2>Send us a message</h2>
+
                         <div class="contact-form">
-                            <form action="" method="post" class="contact-form">
-								
+                            <form action="javascript:void(0)" method="post" class="contact-form">
+
                                 <div class="controls">
                                     <div class="row">
                                         <div class="span4"><label>Your name</label><span class="your-name"><input type="text" name="your-name" value="" size="40"></span>
@@ -112,7 +116,7 @@
             </div>
             <!-- /#main -->
             
-            <?php include("sidebar_page.php") ?>
+            <?php include("sidebar.php") ?>
             <!-- /#sidebar -->
 
         </div>
