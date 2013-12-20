@@ -66,9 +66,5 @@ function next()
 function prev()
 {
     begin -= offset;
-    if(begin < 0)
-    {
-        begin = 0;
-    }
     search();
 }

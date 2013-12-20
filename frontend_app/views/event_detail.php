@@ -68,39 +68,10 @@
 						<h1 class="page-header fl"><?php echo $event->judul ?></h1>
                                                 <div class="span12 gallery">
                                                     <div class="preview">
-                                                            <img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=1" alt="">
+                                                            <img src="<?php echo EVENT_UPLOAD_PATH.$event->gambar; ?>" alt="">
                                                     </div>
 
-                                                    <div class="content">
-                                                            <ul>
-                                                                    <li class="active">
-                                                                            <div class="thumb">
-                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=2" alt=""></a>
-                                                                            </div>
-                                                                    </li>
-                                                                    <li>
-                                                                            <div class="thumb">
-                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=3" alt=""></a>
-                                                                            </div>
-                                                                    </li>
-                                                                    <li>
-                                                                            <div class="thumb">
-                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=4" alt=""></a>
-                                                                            </div>
-                                                                    </li>
-                                                                    <li>
-                                                                            <div class="thumb">
-                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=5" alt=""></a>
-                                                                            </div>
-                                                                    </li>
-                                                                    <li>
-                                                                            <div class="thumb">
-                                                                                    <a href="#"><img src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>&index=6" alt=""></a>
-                                                                            </div>
-                                                                    </li>
-
-                                                            </ul>
-                                                    </div>
+                                                    
                                                     <!-- /.content -->
                                                 </div>
 						<div class="property-detail">

@@ -45,7 +45,7 @@
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
 		<script type='text/javascript' src='<?php echo base_url()?>template/assets/libraries/rs-plugin/js/jquery.themepunch.plugins.min.js'></script>
 
-		<title>Properta | Real Estate Template</title>
+		<title><?php echo ucwords(strtolower($property->JUDUL)) ?> - RumahSuper.com</title>
 	</head>
 
 	<body class="home page page-template">
@@ -57,23 +57,23 @@
 				<ul class="breadcrumb">
 					<li><a href="<?php echo base_url()?>">Home</a> <span class="divider">/</span></li>
 				  	<li><a href="<?php echo base_url("listing")?>">Property Listing</a> <span class="divider">/</span></li>
-				  	<li class="active"><?php echo $property->JUDUL ?></li>
+				  	<li class="active"><?php echo ucwords(strtolower($property->JUDUL)) ?></li>
 				</ul>
 
 				<div class="row" id="maincontainer">
-					<?php include('sidebar_single.php')?>
+					<?php include('sidebar_agency.php')?>
 					<!-- /#sidebar -->
 
 					<div id="main" class="span9 single-property">
 
-						<h1 class="page-header fl"><?php echo $property->JUDUL ?></h1>
+						<h1 class="page-header fl"><?php echo ucwords(strtolower($property->JUDUL)) ?></h1>
 
 						<div class="property-detail">
 
 							<div class="row">
 								<div class="span6 gallery" id="images_place">
 									<div class="preview">
-										<img src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
+										<img class="img-polaroid" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>&index=1" alt="">
 									</div>
 
 									
@@ -117,16 +117,15 @@
 											<h2>Informasi Umum</h2>
 											<div class="row">
 												<ul class="span6">
-													<li class="checked">Lantai : <?php echo $property->LANTAI ?></li>
-													<li class="checked">Jumlah Kamar Tidur : <?php echo $property->KAMAR_TIDUR ?></li>
-													<li class="checked">Jumlah Kamar Mandi : <?php echo $property->KAMAR_MANDI ?></li>
-													<li class="checked">Daya Listrik : <?php echo $property->DAYA_LISTRIK ?></li>
-													<li class="checked">Garasi : <?php echo $property->GARASI ?></li>
-													<li class="checked">Perabotan : <?php echo ($property->FURNISHED==1)? "Dilengkapi Perabotan" : "Tidak ada" ?></li>
-													<li class="checked">Sertifikat : <?php echo $property->SERTIFIKAT ?></li>
-													<li class="checked">Kondisi : <?php echo $property->KONDISI ?> </li>
-													<li class="checked">Telephone : <?php echo ($property->JALUR_TELEPON==1)? "Ada" : "Tidak ada" ?></li>
-													<!--<li class="plain">Sertifikat : <?php echo $property->SERTIFIKAT ?></li>-->
+													<li class="checked"><strong>Lantai :</strong> <?php echo ($property->LANTAI)? $property->LANTAI : "1" ?></li>
+													<li class="checked"><strong>Jumlah Kamar Tidur :</strong> <?php echo ($property->KAMAR_TIDUR)? $property->KAMAR_TIDUR : "-" ?></li>
+													<li class="checked"><strong>Jumlah Kamar Mandi :</strong> <?php echo ($property->KAMAR_MANDI)? $property->KAMAR_MANDI : "-" ?></li>
+													<li class="checked"><strong>Daya Listrik :</strong> <?php echo ($property->DAYA_LISTRIK) ? $property->DAYA_LISTRIK : "-" ?></li>
+													<li class="checked"><strong>Garasi :</strong> <?php echo ($property->GARASI)? $property->GARASI : "-" ?></li>
+													<li class="checked"><strong>Perabotan :</strong> <?php echo ($property->FURNISHED==1)? "Dilengkapi Perabotan" : "-" ?></li>
+													<li class="checked"><strong>Sertifikat :</strong> <?php echo ($property->SERTIFIKAT)? $property->SERTIFIKAT : "-" ?></li>
+													<li class="checked"><strong>Kondisi :</strong> <?php echo $property->KONDISI ?> </li>
+													<li class="checked"><strong>Telephone :</strong> <?php echo ($property->JALUR_TELEPON==1)? "Ada" : "Tidak ada" ?></li>
 												</ul>
 											</div>
 											<!-- /.row -->
