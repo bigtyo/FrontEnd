@@ -297,54 +297,61 @@
                     <div class="show-all">
                         <a href="properties/">Show all</a>
                     </div>
-                    <hr>
-
-                    <h2>Our Event</h2>
+                    
+                  
+                    <h1 class="page-header">Our Event</h1>
                     <div class="properties-grid featured">
-                        <div class="row">
-                            <?php foreach($this->propertylib->get_recent_event() as $item ) { ?>
+                       <div class="row-fluid">
+                           
+                            <?php foreach($events as $event ) { ?>
                             <div class="span3">
+                                
                                 <div class="property">
                                     <div class="image">
                                         <div class="content">
-                                            <a href="property-detail.html">
+                                            <a href="<?php echo base_url()."event/".url_title(strtolower($event->judul))."-".$event->eventid; ?>">
                                                 <div class="description">
-                                                    <p>Quisque non dictum eros. Praesent porta vehicula arcu eu ornare. Donec id egestas arcu. Suspendisse auctor condimentum ligula ultricies cursus. Vestibulum vel orci vel lacus rhoncus sagittis sed vitae ...</p>
+                                                    <p><?php echo $event->description ?></p>
                                                 </div>
-                                                <img src="<?php echo base_url()?>template/assets/img/property-tmp-small.png" alt="Randolph St NW">
+                                                <img src="<?php echo EVENT_UPLOAD_PATH.$event->gambar; ?>" alt="<?php echo $event->judul; ?>" />
                                             </a>
                                         </div>
-                                        <!-- /.content -->
+                                         <!-- /.content -->
                                     </div>
-                                    <!-- /.image -->
-
+                                     <!-- /.image  -->
                                     <div class="info">
                                         <div class="title clearfix">
-                                            <h2>
-                                                <a href="<?php echo base_url()." event/".url_title(strtolower($item->judul))."-".$item->eventid ?>">
-                                                    <?php echo $item->judul ?></a>
-                                            </h2>
+                                            <div class="title clearfix">
+                                                <h2>
+                                                    <a href="<?php echo base_url()."event/".url_title(strtolower($event->judul))."-".$event->eventid ?>">
+                                                        <?php echo $event->judul ?></a>
+                                                </h2>
+                                            </div>
                                         </div>
                                         <!-- /.title -->
 
-                                        <div class="location">12/12/2013</div>
+                                        
                                         <!-- /.location -->
                                     </div>
-                                    <!-- /.info -->
+
+
 
                                 </div>
-                                <!-- /.property -->
+                                <div class="property-info clearfix">
+                                        
+                                         <!-- /.title -->
+
+                                        <div class="location"><?php echo $event->tanggal ?></div>
+                                        <!-- /.location  -->
+                                 </div>
                             </div>
                             <!-- /.span4 -->
                             <?php } ?>
                         </div>
                     </div>
-                    <!-- /.properties-grid -->
-
                     <div class="show-all">
-                        <a href="properties/">Show all Event</a>
+                        <a href="event/">Show all Event</a>
                     </div>
-                    <hr>
 
                 </div>
                 <!-- /#main -->

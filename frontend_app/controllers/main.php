@@ -11,11 +11,13 @@
 		function index(){
 
 			$data = array();
-			$data["model"] = $this->property_model;
+			$data['model'] = $this->property_model;
                         $data['marketings'] = $this->property_model->getMarketingByListingid(0);
                         $data['hotpicks'] = $this->property_model->getHotPick(3);
                         $data['recents'] = $this->property_model->getNewListing();
+                        $data['events'] =$this->property_model->get_recent_event(3);
 			$this->load->view('homepage', $data);
+                        //echo json_encode($data['events']);
 		}
 
 
@@ -110,10 +112,23 @@
 			$this->load->view('contact', $data);
 		}
 		
-		function event_detail($LISTINGID=0){
-			$data["property"] = $this->property_model->get_property_detail($LISTINGID);
+		function event_detail($eventid=0){
+			$data["event"] = $this->property_model->get_event_detail($eventid);
 			$this->load->view('event_detail', $data);
 		}
+                
+                function event(){
+                    $data['events'] = $this->property_model->get_recent_event();
+                    $data['count'] = count($data['events']);
+                    $data['scripts'] = array(
+                            "event"
+                        );
+                        $data['recents'] = $this->property_model->getNewListing();
+                        //echo json_encode($data);
+                        $data['marketings'] = $this->property_model->getMarketingByListingid();
+                        $data['hotpicks'] = $this->property_model->getHotPick(3);
+                    $this->load->view('event',$data);
+                }
                 
                 function listingsearch()
                 {

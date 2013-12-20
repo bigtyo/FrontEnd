@@ -56,26 +56,31 @@
 			<div class="container">
 				<ul class="breadcrumb">
 					<li><a href="<?php echo base_url()?>">Home</a> <span class="divider">/</span></li>
-				  	<li><a href="<?php echo base_url("listing")?>">Property Listing</a> <span class="divider">/</span></li>
-				  	<li class="active"><?php echo $property->JUDUL ?></li>
+				  	<li><a href="<?php echo base_url("event")?>">Event</a> <span class="divider">/</span></li>
+				  	<li class="active"><?php echo $event->judul ?></li>
 				</ul>
 
 				<div class="row">
-					<?php include('sidebar_single.php')?>
+					<?php //include('sidebar_single.php')?>
 					<!-- /#sidebar -->
 
-					<div id="main" class="span9 single-property">
+					<div id="main" class="span12 single-property">
 						<h1 class="page-header fl"><?php echo $event->judul ?></h1>
-                                                <div class="span12 gallery">
-                                                    <div class="preview">
-                                                            <img src="<?php echo EVENT_UPLOAD_PATH.$event->gambar; ?>" alt="">
-                                                    </div>
-
-                                                    
-                                                    <!-- /.content -->
-                                                </div>
+                                                
 						<div class="property-detail">
-                                                    <p><?php echo $event->description; ?></p>
+                                                    <div class="span12 gallery">
+                                                        <div class="preview">
+                                                                <img src="<?php echo EVENT_UPLOAD_PATH.$event->gambar; ?>" alt="">
+                                                        </div>
+
+
+                                                        <!-- /.content -->
+                                                    </div>
+                                                    <h2>Deskripsi</h2>
+                                                     <p><?php echo $event->description; ?></p>
+                                                        
+                                                    
+                                                    
                                                     <div class="row">
 								<div class="span6">
 									<div class="row">
@@ -96,10 +101,11 @@
 									</div>
 									<!-- /.row -->
 								</div>
-
+                                                                
 								
 
 							</div>
+                                                    
 						</div>
                                                 
 					</div>

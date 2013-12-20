@@ -2,7 +2,7 @@ var begin = 0;
 var offset = 10;
 var maxdata = Number($("#count").val());
 
-$("#btnCari").click(function(){
+$("#btnCari").bind("click touchstart",function(){
     begin = 0;
     
     search(begin,offset);

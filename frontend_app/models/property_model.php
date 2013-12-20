@@ -22,6 +22,20 @@ class Property_model extends CI_Model{
 		$query = $this->db->query("SELECT * from view_listing where listingid = $LISTINGID");
 		return $query->row();
 	}
+        
+        function get_recent_event($limit=3){
+		
+                $this->db->select("event.eventid,event.judul,date_format(event.tanggal,'%d %M %Y') as tanggal,event.description,event.Tempat,event.gambar",FALSE);
+                $this->db->from("event");
+		$query = $this->db->limit($limit)->get();
+                return $query->result();
+	}
+        
+        function get_event_detail($eventid){
+            $query = $this->db->query("SELECT * from event where eventid = $eventid");
+            return $query->row();
+        }
+        
 	function get_listing(){
 		$query = "SELECT * FROM view_listing limit 0,10";
                 $count = "SELECT COUNT(*) FROM view_listing";

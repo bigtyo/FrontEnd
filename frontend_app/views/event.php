@@ -47,34 +47,25 @@
 							  	<li class="active">Listing Property</li>
 							</ul>
 							<div class="row" id="maincontainer">
-								<?php include('sidebar.php')?>
+								<?php include('sidebar_event.php')?>
 								<!-- /#sidebar -->
 								<div id="main" class="span9 property-listing">
-									<h1 class="page-header">Properties</h1>
+									<h1 class="page-header">Events</h1>
 									<div class="clearfix" id="listingcontainer">
-										<script type="text/javascript">
-											jQuery(document).ready(function ($) {
-													$('select[name=filter_sort_by]').change(function () {
-															$('form.form-sort').submit();
-														});
-													$('select[name=filter_order]').change(function () {
-															$('form.form-sort').submit();
-														});
-												});
-										</script>
 										
-                                                                            <div class="properties-rows" id="listings">
+										
+                                                                            <div class="properties-rows" id="events">
                                                                                 <input type="hidden" id="count" value="<?php echo $count; ?>"
                                                                                     <div class="row">
-                                                                                            <?php foreach ($listing as $property) { ?>
+                                                                                            <?php foreach ($events as $event) { ?>
                                                                                             <div class="property span9">
                                                                                                     <div class="row">
                                                                                                             <div class="span3">
                                                                                                                     <div class="image">
                                                                                                                             <div class="content">
-                                                                                                                                    <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>">
+                                                                                                                                    <a href="<?php echo base_url()."event/".url_title(strtolower($event->judul))."-".$event->eventid ?>">
                                                                                                                                     <img width="570" height="425"
-                                                                                                                                    src="<?php echo NODE_URL; ?>getimageevent?id=<?php echo $event->eventid; ?>"
+                                                                                                                                    src="<?php echo EVENT_UPLOAD_PATH; ?><?php echo $event->gambar; ?>"
                                                                                                                                     class="thumbnail-image" alt="15">
                                                                                                                                     </a>
                                                                                                                             </div>
@@ -85,39 +76,26 @@
                                                                                                             <div class="body span6">
                                                                                                                     <div class="title-price row">
                                                                                                                             <div class="title span4">
-                                                                                                                                    <h2><a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>"><?php echo $property->JUDUL ?></a></h2>
+                                                                                                                                    <h2><a href="<?php echo base_url()."event/".url_title(strtolower($event->judul))."-".$event->eventid ?>"><?php echo $event->judul ?></a></h2>
                                                                                                                             </div>
                                                                                                                             <!-- /.title -->
                                                                                                                             <div class="price">
-                                                                                                                                    <?php echo get_rupiah($property->HARGA) ?>
+                                                                                                                                    <?php echo $event->tanggal ?>
                                                                                                                             </div>
                                                                                                                             <!-- /.price -->
                                                                                                                     </div>
                                                                                                                     <!-- /.title -->
-                                                                                                                    <div class="location"><?php echo $property->lokasi; ?></div>
+                                                                                                                    <div class="location"><?php echo $event->Tempat; ?></div>
                                                                                                                     <!-- /.location -->
                                                                                                                     <div class="body">
-                                                                                                                            <p><?php echo $property->DESCRIPTION; ?></p>
+                                                                                                                            <p><?php echo $event->description; ?></p>
                                                                                                                     </div>
                                                                                                                     <!-- /.body -->
                                                                                                                     <div class="property-info clearfix">
-                                                                                                                            <div class="area">
-                                                                                                                                    <i class="icon icon-normal-cursor-scale-up"></i>
-                                                                                                                                    <?php echo $property->LUAS_BANGUNAN; ?>m<sup>2</sup>
-                                                                                                                            </div>
-                                                                                                                            <!-- /.area -->
-                                                                                                                            <div class="bedrooms">
-                                                                                                                                    <i class="icon icon-normal-bed"></i>
-                                                                                                                                    <?php echo $property->KAMAR_TIDUR; ?>
-                                                                                                                            </div>
-                                                                                                                            <!-- /.bedrooms -->
-                                                                                                                            <div class="bathrooms">
-                                                                                                                                    <i class="icon icon-normal-shower"></i>
-                                                                                                                                    <?php echo $property->KAMAR_MANDI; ?>
-                                                                                                                            </div>
+                                                                                                                            
                                                                                                                             <!-- /.bathrooms -->
                                                                                                                             <div class="more-info">
-                                                                                                                                    <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL))."-".$property->LISTINGID ?>">More Info<i
+                                                                                                                                    <a href="<?php echo base_url()."event/".url_title(strtolower($event->judul))."-".$event->eventid ?>">More Info<i
                                                                                                                                     class="icon icon-normal-right-arrow-circle"></i></a>
                                                                                                                             </div>
                                                                                                                     </div>
