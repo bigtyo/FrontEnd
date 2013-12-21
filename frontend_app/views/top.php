@@ -53,7 +53,7 @@
 
 							<li class="menu-item"><a href="<?php echo base_url()?>">Home</a></li>
 							<li class="menu-item"><a href="<?php echo base_url()?>listing">Property Listing</a></li>
-							<li class="menu-item"><a href="<?php echo base_url()?>listing">Project Listing</a></li>
+							<li class="menu-item"><a href="<?php echo base_url()?>project">Project Listing</a></li>
 							<li class="menu-item"><a href="<?php echo base_url()?>event">Event</a></li>
 							<li class="menu-item"><a href="<?php echo base_url()?>about">About</a></li>
 							<li class="menu-item"><a href="<?php echo base_url()?>careers">Careers</a></li>

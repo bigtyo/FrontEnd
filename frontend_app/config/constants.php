@@ -39,7 +39,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 define('NODE_URL',"http://rumahsuper.com:3000/");
 define("LISTING_UPLOAD_PATH","C:/program files/nodejs/RumahSuper/Public/Images/");
 define("LISTING_TEMP_PATH","C:/Program Files/xampp/htdocs/upload/server/php/files/");
-define("EMPLOYEE_UPLOAD_PATH","http://localhost:85/propertyadmin/employee/");
-define("EVENT_UPLOAD_PATH","http://localhost:85/propertyadmin/event/");
+define("EMPLOYEE_UPLOAD_PATH","http://localhost:85/ci/employee/");
+define("EVENT_UPLOAD_PATH","http://localhost:85/ci/event/");
+define("PROJECT_UPLOAD_PATH","http://localhost:85/ci/project/");
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

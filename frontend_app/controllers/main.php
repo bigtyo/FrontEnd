@@ -111,9 +111,35 @@
 			$data = array();
 			$this->load->view('contact', $data);
 		}
+                
+                function project(){
+                    $data['projects'] = $this->property_model->get_recent_projects();
+                    $data['count'] = count($data['projects']);
+                    $data['scripts'] = array(
+                            "project"
+                        );
+                        $data['recents'] = $this->property_model->getNewListing();
+                        //echo json_encode($data);
+                        $data['marketings'] = $this->property_model->getMarketingByListingid();
+                        $data['hotpicks'] = $this->property_model->getHotPick(3);
+                    $this->load->view('project',$data);
+                }
+                
+                function project_detail($projectid = 0){
+                    $data['recents'] = $this->property_model->getNewListing();
+                    $data["project"] = $this->property_model->get_project_detail($projectid);
+                        //echo json_encode($data);
+                        $data['marketings'] = $this->property_model->getMarketingByListingid();
+                        $data['hotpicks'] = $this->property_model->getHotPick(3);
+			$this->load->view('project_detail', $data);
+                }
 		
 		function event_detail($eventid=0){
 			$data["event"] = $this->property_model->get_event_detail($eventid);
+                        $data['recents'] = $this->property_model->getNewListing();
+                        //echo json_encode($data);
+                        $data['marketings'] = $this->property_model->getMarketingByListingid();
+                        $data['hotpicks'] = $this->property_model->getHotPick(3);
 			$this->load->view('event_detail', $data);
 		}
                 

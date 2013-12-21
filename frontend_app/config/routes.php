@@ -49,9 +49,11 @@ $route['careers'] = "page/careers";
 
 $route['listing'] = "main/listing";
 $route['event'] = "main/event";
-$route['event'] = "main/event";
+//$route['event'] = "main/event";
+$route['project'] = "main/project";
 $route['listingsearch/(:any)-(:num)'] = "main/event_detail/$2";
 $route['property/(:any)-(:num)'] = "main/single/$2";
+$route['project/(:any)-(:num)'] = "main/project_detail/$2";
 
 
 

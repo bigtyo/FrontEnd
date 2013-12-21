@@ -153,60 +153,50 @@
 
                     <h1 class="page-header">Recent Project</h1>
                     <div class="properties-grid">
-                        <?php $offset_array=array(0); foreach($offset_array as $offset){ ?>
+                        <?php //$offset_array=array(0); foreach($offset_array as $offset){ ?>
                         <div class="row-fluid">
-                            <?php foreach($model->get_homepage_listing($offset) as $property){ ?>
+                            <?php foreach($model->get_recent_projects() as $project){ ?>
                             <div class="span3">
                                 <div class="property">
                                     <div class="image">
                                         <div class="content">
-                                            <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL)."- ".$property->LISTINGID); ?>">
+                                            <a href="<?php echo base_url()."project/".url_title(strtolower($project->JUDUL)."- ".$project->PROJECTID); ?>">
                                                 <div class="description">
-                                                    <p>
-                                                        <?php echo $property->ALAMAT_LENGKAP ?></p>
+                                                    
+                                                        <?php echo $project->DESKRIPSI ?>
                                                 </div>
-                                                <img class="property-thumbnail" src="<?php echo NODE_URL; ?>getimagelisting?id=<?php echo $property->LISTINGID; ?>" alt="<?php echo $property->ALAMAT_SINGKAT; ?>">
+                                                <img class="property-thumbnail" src="<?php echo PROJECT_UPLOAD_PATH.$project->GAMBAR; ?>" alt="<?php echo $project->ALAMAT; ?>">
                                             </a>
                                         </div>
-                                        <div class="rent-sale">Sale</div>
-                                        <div class="price">
-                                            <?php echo get_rupiah($property->HARGA) ?></div>
+                                        
+                                        <div class="address">
+                                            <?php echo $project->ALAMAT ?></div>
                                     </div>
                                     <!-- /.image -->
 
                                     <div class="info">
                                         <div class="title clearfix">
                                             <h2>
-                                                <a href="<?php echo base_url()."property/".url_title(strtolower($property->JUDUL)."-".$property->LISTINGID) ?>">
-                                                    <?php echo $property->JUDUL ?></a>
+                                                <a href="<?php echo base_url()."project/".url_title(strtolower($project->JUDUL)."-".$project->PROJECTID) ?>">
+                                                    <?php echo $project->JUDUL ?></a>
                                             </h2>
                                         </div>
-                                        <div class="location">
-                                            <?php echo $property->lokasi; ?></div>
+                                        
                                     </div>
                                     <!-- /.info -->
                                 </div>
                                 <!-- /.property -->
 
                                 <div class="property-info clearfix">
-                                    <div class="area">
-                                        <i class="icon-home icon-custom"></i>
-                                        <?php echo $property->LUAS_BANGUNAN; ?>m
-                                        <sup>2</sup>
-                                    </div>
-                                    <div class="bedrooms">
-                                        <i class="icon-random icon-custom"></i>
-                                        <?php echo $property->KAMAR_TIDUR; ?></div>
-                                    <div class="bathrooms">
-                                        <i class="icon-calendar icon "></i>
-                                        <?php echo $property->KAMAR_MANDI; ?></div>
-                                    <!-- /.bathrooms -->
+                                    <div class="date">
+                                            <?php echo $project->tanggal; ?></div>
+                                    
                                 </div>
                                 <!-- /.property-info -->
                             </div>
                             <?php } ?>
                         </div>
-                        <?php } ?>
+                        <?php //} ?>
                         <div class="row-fluid">
                         </div>
                         <!-- /.row -->
@@ -214,7 +204,7 @@
 
                     <!-- /.properties-grid -->
                     <div class="show-all">
-                        <a href="properties/">Show all</a>
+                        <a href="project/">Show all</a>
                     </div>
 
                     <h1 class="page-header">Recent Properties</h1>

@@ -1,55 +1,38 @@
 <div class="sidebar span3">
-    <h2>Search Event</h2>
+    
 
-    <div class="property-filter widget">
+   <div id="agencies_widget-2" class="widget agencies">
+
+        <h2>Agencies</h2>
+
         <div class="content">
-            <form method="get" action="javascript:void(0);">
-                <div class="location control-group">
-                    <label class="control-label">Tanggal Event</label>
-                    <div class="controls">
-                        <input type="text" class="date" />
-                    </div>
-                    <!-- /.controls -->
+            <?php foreach($this->propertylib->get_all_office() as $item) { ?>
+
+            <div class="agency clearfix">
+                <img class="img-polaroid" src="<?php echo base_url()?>template/images/office/<?php echo $item->OFFICEID ?>.jpg">
+                <div class="address">
+                    <?php echo $item->ALAMAT ?>
                 </div>
-                <!-- /.control-group -->
+                <!-- /.address -->
 
-                <div class="type control-group">
-                    <label class="control-label">Lokasi</label>
-                    <div class="controls">
-                        <input type="text" id="lokasi" class="date" />
-                    </div>
-                    <!-- /.controls -->
+                <div class="email">
+                    <a href="mailto:<?php echo $item->EMAIL ?>">
+                        <?php echo $item->EMAIL ?></a>
                 </div>
-                <!-- /.control-group -->
+                <!-- /.email -->
 
-                <div class="type control-group">
-                    <label class="control-label">Penyelenggara</label>
-                    <div class="controls">
-                        <select name="office" id="officeid">
-                            <option value="">-</option>
-                            <?php foreach ($this->propertylib->get_all_office() as $office) { ?>
-                            <option value="<?php echo $office->OFFICEID ?>">
-                                <?php echo $office->NAMA ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                    <!-- /.controls -->
+                <div class="phone">
+                    <?php echo $item->TELEPON ?>
                 </div>
-                <!-- /.control-group -->
+                <!-- /.phone -->
 
-                
-                <!-- /.control-group -->
-
-
-                <div class="form-actions">
-                    <button class="btn btn-primary btn-large" id="btnCari">Cari Event</button>
-                </div>
-                <!-- /.form-actions -->
-            </form>
+            </div>
+            <!-- /.agency -->
+            <?php } ?>
         </div>
         <!-- /.content -->
+
     </div>
-    <!-- /.property-filter -->
-    
-    
+
+
 </div>

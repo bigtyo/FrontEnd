@@ -23,10 +23,24 @@ class Property_model extends CI_Model{
 		return $query->row();
 	}
         
+        function get_recent_projects($limit=3){
+            $this->db->select("PROJECTID,JUDUL,date_format(waktuupdate,'%d %M %Y') as tanggal,DESKRIPSI,ALAMAT,GAMBAR",FALSE);
+                $this->db->from("project");
+                $this->db->order_by("waktuupdate", "desc");
+		$query = $this->db->limit($limit)->get();
+                return $query->result();
+        }
+        
+        function get_project_detail($projectid){
+            $query = $this->db->query("SELECT PROJECTID,JUDUL,date_format(waktuupdate,'%d %M %Y') as tanggal,DESKRIPSI,ALAMAT,GAMBAR from event where projectid = $projectid");
+            return $query->row();
+        }
+        
         function get_recent_event($limit=3){
 		
                 $this->db->select("event.eventid,event.judul,date_format(event.tanggal,'%d %M %Y') as tanggal,event.description,event.Tempat,event.gambar",FALSE);
                 $this->db->from("event");
+                $this->db->order_by("tanggal", "desc");
 		$query = $this->db->limit($limit)->get();
                 return $query->result();
 	}
